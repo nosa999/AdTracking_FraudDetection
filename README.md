@@ -1,4 +1,5 @@
 # AdTracking_FraudDetection
-AdTracking Fraud Detection: Classifying Fraud with lightgbm on TalkingData dataset on Kaggle website
+AdTracking Fraud Detection: Classifying Fraud with lightgbm on TalkingData dataset on Kaggle website.
+
 This code is for detecting fraud in Adtracking for TalkingData platform. The dataset covering approximately 200 million clicks over 4 days! The trainset columns are: “ip: ip address of click”, “app: app id for marketing”, “device: device type id of user mobile phone”, “os: os version id of user mobile phone”, “channel: channel id of mobile ad publisher”, “click_time: timestamp of click”, “attributed_time: if user download the app for after clicking an ad, this is the time of the app download”, “is_attributed: the target that is to be predicted, indicating the app was downloaded”. In this dataset “ip” is a number with a wide range of values, app, device, os and channel are categorical values with a smaller range of variation. Hrnce, we separated between values with is_attributed with value 1 and value 0. 
 We used kfold algorithm from sklearn for validation, and we use “lightgbm” classifier for training the dataset.
